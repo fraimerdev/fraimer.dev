@@ -1,5 +1,4 @@
 import { notFound, redirect } from "next/navigation";
-import React from "react";
 
 export default async function RedirectsPage({
 	params,
