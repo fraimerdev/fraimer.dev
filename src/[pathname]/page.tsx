@@ -10,9 +10,7 @@ export default async function RedirectsPage({
 
 	switch (pathname) {
 		case "proton":
-			return redirect(
-				"https://discord.com/oauth2/authorize?client_id=1358977421621071894"
-			);
+			return redirect("https://prtn.xyz");
 	}
 
 	notFound();
