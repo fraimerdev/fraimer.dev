@@ -24,3 +24,228 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(30px, -30px);
+  }
+  50% {
+    transform: translate(-30px, 30px);
+  }
+  75% {
+    transform: translate(30px, 30px);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+.animation-delay-300 {
+  animation-delay: 0.3s;
+}
+
+.animation-delay-600 {
+  animation-delay: 0.6s;
+}
+
+.animation-delay-900 {
+  animation-delay: 0.9s;
+}
+
+.grid-pattern {
+  width: 100%;
+  height: 100%;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+  animation: grid-move 30s linear infinite;
+}
+
+@keyframes grid-move {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 60px 60px;
+  }
+}
+
+.gradient-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.15;
+  animation: orb-float 20s ease-in-out infinite;
+}
+
+@keyframes orb-float {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(100px, -100px) scale(1.2);
+  }
+  66% {
+    transform: translate(-100px, 100px) scale(0.8);
+  }
+}
+
+.gradient-orb-1 {
+  width: 500px;
+  height: 500px;
+  background: white;
+  top: 10%;
+  left: -10%;
+  animation-delay: 0s;
+}
+
+.gradient-orb-2 {
+  width: 400px;
+  height: 400px;
+  background: white;
+  top: 50%;
+  right: -5%;
+  animation-delay: 7s;
+}
+
+.gradient-orb-3 {
+  width: 450px;
+  height: 450px;
+  background: white;
+  bottom: 10%;
+  left: 30%;
+  animation-delay: 14s;
+}
+
+.line {
+  position: absolute;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  height: 1px;
+  width: 100%;
+  animation: line-move 15s linear infinite;
+}
+
+@keyframes line-move {
+  0% {
+    transform: translateY(-100vh) translateX(-100%);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) translateX(100%);
+    opacity: 0;
+  }
+}
+
+.line-1 {
+  animation-delay: 0s;
+}
+
+.line-2 {
+  animation-delay: 5s;
+}
+
+.line-3 {
+  animation-delay: 10s;
+}
+
+.dot {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: white;
+  border-radius: 50%;
+  animation: float 12s ease-in-out infinite;
+  opacity: 0.6;
+}
+
+.dot-1 {
+  top: 15%;
+  left: 8%;
+  animation-duration: 10s;
+}
+
+.dot-2 {
+  top: 35%;
+  right: 12%;
+  animation-duration: 14s;
+  animation-delay: 1s;
+}
+
+.dot-3 {
+  bottom: 25%;
+  left: 18%;
+  animation-duration: 11s;
+  animation-delay: 2s;
+}
+
+.dot-4 {
+  top: 55%;
+  right: 22%;
+  animation-duration: 13s;
+  animation-delay: 3s;
+}
+
+.dot-5 {
+  bottom: 15%;
+  right: 38%;
+  animation-duration: 15s;
+  animation-delay: 4s;
+}
+
+.dot-6 {
+  top: 75%;
+  left: 45%;
+  animation-duration: 12s;
+  animation-delay: 5s;
+}
+
+.dot-7 {
+  top: 25%;
+  left: 60%;
+  animation-duration: 14s;
+  animation-delay: 6s;
+}
+
+.dot-8 {
+  bottom: 40%;
+  right: 8%;
+  animation-duration: 11s;
+  animation-delay: 7s;
+}
+
+.dot-9 {
+  top: 85%;
+  right: 55%;
+  animation-duration: 13s;
+  animation-delay: 8s;
+}
+
+.dot-10 {
+  top: 45%;
+  left: 30%;
+  animation-duration: 16s;
+  animation-delay: 9s;
+}

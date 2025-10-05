@@ -10,6 +10,12 @@ export default async function RedirectsPage({
 	switch (pathname) {
 		case "proton":
 			return redirect("https://prtn.xyz");
+		case "x":	
+			return redirect("https://x.com/plxcsy");
+		case "github":
+			return redirect("https://github.com/fraimerdev");
+		case "donate":
+			return redirect("https://ko-fi.com/fraimer");
 	}
 
 	notFound();
