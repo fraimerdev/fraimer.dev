@@ -115,10 +115,12 @@ export default function Home() {
 							👋 Hey there you!
 						</h1>
 						<p className="text-base sm:text-lg text-gray-300 leading-relaxed max-w-2xl">
-							I am an aspiring Software engineer/Tech Enthusiast! I will be
-							sharing my learning in software development and projects here.
-							Currently I focused on advancing my knowledge in software
-							development.
+							I’m Fraimer De La Cruz, a 17-year-old programmer and Computer
+							Science student with a passion for software development and
+							artificial intelligence. I enjoy building modern websites and AI
+							Agents that make technology more intuitive and useful. With
+							increasing experience in full-stack development and AI Agents, I
+							am expanding my skills to create innovative digital solutions.
 						</p>
 					</div>
 
