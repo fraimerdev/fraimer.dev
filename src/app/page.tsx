@@ -52,18 +52,18 @@ export default function Home() {
 						<div className="flex items-center gap-2 sm:gap-3">
 							<span className="text-gray-500 w-16 sm:w-20">GitHub</span>
 							<a
-								href="https://github.com/plxcsy"
+								href="https://github.com/fraimerdev"
 								target="_blank"
 								rel="noopener noreferrer"
 								className="text-white hover:underline"
 							>
-								@plxcsy
+								@fraimerdev
 							</a>
 						</div>
 						<div className="flex items-center gap-2 sm:gap-3">
 							<span className="text-gray-500 w-16 sm:w-20">X</span>
 							<a
-								href="https://x.com/fraimer"
+								href="https://x.com/plxcsy"
 								target="_blank"
 								rel="noopener noreferrer"
 								className="text-white hover:underline"
