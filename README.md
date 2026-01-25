@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# fraimer.dev
+
+Personal portfolio website built with [TanStack Start](https://tanstack.com/start) and [Tailwind CSS](https://tailwindcss.com).
+
+## Tech Stack
+
+- **Framework**: TanStack Start (React)
+- **Styling**: Tailwind CSS v4
+- **Build Tool**: Vite
+- **Language**: TypeScript
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+ or Bun
+
+### Installation
 
 ```bash
-npm run dev
+# Install dependencies
+bun install
 # or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Development
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# Start development server
+bun run dev
+# or
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The app will be available at [http://localhost:7000](http://localhost:7000).
 
-## Learn More
+### Build
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+# Build for production
+bun run build
+# or
+npm run build
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Production
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+# Start production server
+bun run start
+# or
+npm run start
+```
 
-## Deploy on Vercel
+## Project Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+src/
+├── routes/
+│   ├── __root.tsx      # Root layout with head metadata
+│   ├── index.tsx       # Home page
+│   ├── terms.tsx       # Commission terms page
+│   └── $pathname.tsx   # Dynamic redirects
+├── styles/
+│   └── app.css         # Global styles & Tailwind
+└── router.tsx          # Router configuration
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Routes
+
+- `/` - Home page with profile and projects
+- `/terms` - Commission terms and conditions
+- `/proton` - Redirects to prtn.xyz
+- `/x` - Redirects to X/Twitter profile
+- `/github` - Redirects to GitHub profile
+- `/donate` - Redirects to Ko-fi page

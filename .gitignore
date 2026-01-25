@@ -13,9 +13,11 @@
 # testing
 /coverage
 
-# next.js
-/.next/
-/out/
+# tanstack start / vite
+/.output/
+/dist/
+/.vinxi/
+/src/routeTree.gen.ts
 
 # production
 /build
@@ -33,9 +35,11 @@ yarn-error.log*
 # env files (can opt-in for committing if needed)
 .env*
 
-# vercel
-.vercel
-
 # typescript
 *.tsbuildinfo
-next-env.d.ts
+
+# lock files (optional - uncomment if you want to ignore)
+# bun.lock
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
